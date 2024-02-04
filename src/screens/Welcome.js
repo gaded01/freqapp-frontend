@@ -33,7 +33,9 @@ const Welcome = () => {
           </Text>
           <TouchableOpacity
             className="bg-orange-600 mt-4 rounded-md h-12 w-72"
-            onPress={submit}
+            onPress={()=> {
+                navigation.navigate("Drawer")
+            }}
           >
             <Text className="text-white text-base pt-3 font-bold text-center">
               Click to Proceed
